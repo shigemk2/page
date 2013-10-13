@@ -30,7 +30,7 @@ class PageViewController < UIViewController
     i = 0
     while i < pageSize
       label = UILabel.alloc.initWithFrame(CGRectMake(i * width, 0, width, height))
-      label.text = NSString.stringWithFormat("%d", i + 1)
+      label.text = (i + 1).to_s
       label.font = UIFont.fontWithName("Arial", size:92)
       label.backgroundColor = UIColor.yellowColor
       label.textAlignment = UITextAlignmentCenter
